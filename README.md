@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-npm i @catsmiaow/eslint-config
+npm i -D @catsmiaow/eslint-config
 ```
 
 ## Usage
