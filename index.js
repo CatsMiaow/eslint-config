@@ -34,7 +34,10 @@ module.exports = {
     'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     'no-return-await': 'off',
     'no-underscore-dangle': ['error', { allow: ['_id'] }],
-    'no-void': ['error', { allowAsStatement: true }],
+    // allowAsStatement option added to v7
+    // https://github.com/eslint/eslint/pull/12613
+    // 'no-void': ['error', { allowAsStatement: true }],
+    'no-void': 'off',
     'object-curly-newline': 'off',
     'spaced-comment': ['error', 'always', { line: { markers: ['/', '#region', '#endregion'] } }],
 
