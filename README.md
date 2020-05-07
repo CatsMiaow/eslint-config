@@ -12,6 +12,7 @@ npm i -D @catsmiaow/eslint-config
 
 ```json
 {
-  "extends": "@catsmiaow/eslint-config"
+  "extends": "@catsmiaow/eslint-config",
+  "rules": {}
 }
 ```
