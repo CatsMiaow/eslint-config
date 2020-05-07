@@ -20,7 +20,7 @@
   "author": "CatsMiaow",
   "homepage": "https://github.com/CatsMiaow/eslint-config#readme",
   "license": "UNLICENSED",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
