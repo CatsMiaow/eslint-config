@@ -22,8 +22,6 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/1277
     'consistent-return': 'off',
     'func-names': 'off',
-    // https://github.com/typescript-eslint/typescript-eslint/issues/977
-    'lines-between-class-members': 'off',
     'max-len': ['error', { code: 140, ignoreTemplateLiterals: true }],
     'newline-per-chained-call': 'off',
     'no-continue': 'off',
@@ -32,14 +30,14 @@ module.exports = {
     // https://github.com/airbnb/javascript/issues/1271
     // https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L334-L352
     'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
-    'no-return-await': 'off',
     'no-underscore-dangle': ['error', { allow: ['_id'] }],
-    // allowAsStatement option added to v7
-    // https://github.com/eslint/eslint/pull/12613
-    // 'no-void': ['error', { allowAsStatement: true }],
-    'no-void': 'off',
+    'no-void': ['error', { allowAsStatement: true }],
     'object-curly-newline': 'off',
     'spaced-comment': ['error', 'always', { line: { markers: ['/', '#region', '#endregion'] } }],
+
+    // Change eslint rule to @typescript-eslint rule
+    'lines-between-class-members': 'off',
+    'no-return-await': 'off',
 
     // https://github.com/benmosher/eslint-plugin-import/issues/1453
     'import/no-cycle': 'off',
@@ -47,6 +45,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
+    '@typescript-eslint/lines-between-class-members': ['error'],
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true, ignoreVoid: true }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/902
