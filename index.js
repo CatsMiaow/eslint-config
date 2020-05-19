@@ -45,7 +45,8 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
-    '@typescript-eslint/lines-between-class-members': ['error'],
+    // https://github.com/typescript-eslint/typescript-eslint/issues/977
+    // '@typescript-eslint/lines-between-class-members': ['error'],
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true, ignoreVoid: true }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/902
