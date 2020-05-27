@@ -51,18 +51,22 @@ module.exports = {
     // https://github.com/iamturns/eslint-config-airbnb-typescript/issues/95
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/naming-convention': ['error',
-      { 'selector': 'variableLike', 'format': ['strictCamelCase'] },
-      { 'selector': 'memberLike', 'format': ['strictCamelCase'] },
+      { 'selector': 'default', 'format': ['strictCamelCase'] },
+      { 'selector': 'variable', 'format': ['camelCase', 'UPPER_CASE'] },
+      { 'selector': 'property', 'format': null, 'leadingUnderscore': 'allow' },
       { 'selector': 'typeLike', 'format': ['StrictPascalCase'] },
-      { 'selector': 'property', 'format': ['strictCamelCase', 'UPPER_CASE'], 'leadingUnderscore': 'allow' }],
+      { 'selector': 'enumMember', 'format': ['UPPER_CASE'] }],
     '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true, ignoreVoid: true }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/902
     '@typescript-eslint/no-inferrable-types': ['error', { ignoreParameters: true, ignoreProperties: true }],
     '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/prefer-includes': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/typedef': 'error',
 
-    'sonarjs/no-duplicate-string': 'off',
+    'sonarjs/no-duplicate-string': 'off'
   },
 };
