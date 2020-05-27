@@ -47,6 +47,14 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/977
     // '@typescript-eslint/lines-between-class-members': ['error'],
     '@typescript-eslint/member-ordering': 'error',
+    // https://github.com/typescript-eslint/typescript-eslint/issues/2077#issuecomment-633217768
+    // https://github.com/iamturns/eslint-config-airbnb-typescript/issues/95
+    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/naming-convention': ['error',
+      { 'selector': 'variableLike', 'format': ['strictCamelCase'] },
+      { 'selector': 'memberLike', 'format': ['strictCamelCase'] },
+      { 'selector': 'typeLike', 'format': ['StrictPascalCase'] },
+      { 'selector': 'property', 'format': ['strictCamelCase', 'UPPER_CASE'], 'leadingUnderscore': 'allow' }],
     '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true, ignoreVoid: true }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/902
     '@typescript-eslint/no-inferrable-types': ['error', { ignoreParameters: true, ignoreProperties: true }],
