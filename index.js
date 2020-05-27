@@ -13,7 +13,6 @@ module.exports = {
     'airbnb-typescript/base',
     'plugin:jest/recommended',
     'plugin:sonarjs/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
