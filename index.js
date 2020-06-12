@@ -44,9 +44,9 @@ module.exports = {
     "import/prefer-default-export": "off",
 
     "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: "angle-bracket" }],
-    "@typescript-eslint/explicit-member-accessibility": "error",
+    "@typescript-eslint/explicit-member-accessibility": ["error", { overrides: { constructors: "no-public" } }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/977
-    // "@typescript-eslint/lines-between-class-members": ["error"],
+    "@typescript-eslint/lines-between-class-members": "off",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/naming-convention": ["error",
       { "selector": "default", "format": ["strictCamelCase"] },
