@@ -44,12 +44,10 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
+    '@typescript-eslint/explicit-member-accessibility': 'error',
     // https://github.com/typescript-eslint/typescript-eslint/issues/977
     // '@typescript-eslint/lines-between-class-members': ['error'],
     '@typescript-eslint/member-ordering': 'error',
-    // https://github.com/typescript-eslint/typescript-eslint/issues/2077#issuecomment-633217768
-    // https://github.com/iamturns/eslint-config-airbnb-typescript/issues/95
-    '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/naming-convention': ['error',
       { 'selector': 'default', 'format': ['strictCamelCase'] },
       { 'selector': 'variable', 'format': ['camelCase', 'UPPER_CASE'] },
@@ -64,6 +62,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/prefer-includes': 'off',
+    '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/typedef': 'error',
