@@ -37,6 +37,7 @@ module.exports = {
     // Change eslint rule to @typescript-eslint rule
     "lines-between-class-members": "off",
     "no-return-await": "off",
+    "no-unused-expressions": "off",
 
     // https://github.com/benmosher/eslint-plugin-import/issues/1453
     "import/no-cycle": "off",
@@ -58,14 +59,17 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/902
     "@typescript-eslint/no-inferrable-types": ["error", { ignoreParameters: true, ignoreProperties: true }],
     "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-call": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unused-expressions": "error",
     "@typescript-eslint/prefer-includes": "off",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/return-await": "error",
     "@typescript-eslint/typedef": "error",
+    "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
 
     "sonarjs/no-duplicate-string": "off"
   },
