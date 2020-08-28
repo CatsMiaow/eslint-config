@@ -4,7 +4,7 @@ Shared ESLint configurations for TypeScript projects
 
 ## Configuration
 
-`Installing a package`on [Configuring npm for use with GitHub Packages](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#installing-a-package)
+`Installing a package` on [Configuring npm for use with GitHub Packages](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#installing-a-package)
 
 ## Install
 
