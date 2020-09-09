@@ -57,8 +57,7 @@ module.exports = {
       { "selector": "typeLike", "format": ["StrictPascalCase"] },
       { "selector": "enumMember", "format": ["UPPER_CASE"] }],
     "@typescript-eslint/no-floating-promises": ["error", { ignoreIIFE: true, ignoreVoid: true }],
-    // https://github.com/typescript-eslint/typescript-eslint/issues/902
-    "@typescript-eslint/no-inferrable-types": ["error", { ignoreParameters: true, ignoreProperties: true }],
+    "@typescript-eslint/no-inferrable-types": "error",
     "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unsafe-assignment": "off",
