@@ -36,6 +36,7 @@ module.exports = {
 
     // Change eslint rule to @typescript-eslint rule
     "lines-between-class-members": "off",
+    "no-loop-func": "off",
     "no-return-await": "off",
     "no-unused-expressions": "off",
 
@@ -57,7 +58,8 @@ module.exports = {
       { "selector": "typeLike", "format": ["StrictPascalCase"] },
       { "selector": "enumMember", "format": ["UPPER_CASE"] }],
     "@typescript-eslint/no-floating-promises": ["error", { ignoreIIFE: true, ignoreVoid: true }],
-    "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/no-inferrable-types": ["error", { ignoreParameters: true, ignoreProperties: true }],
+    "@typescript-eslint/no-loop-func": ["error"],
     "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unsafe-assignment": "off",
@@ -67,7 +69,7 @@ module.exports = {
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/return-await": "error",
-    "@typescript-eslint/typedef": "error",
+    "@typescript-eslint/typedef": ["error", { "arrowParameter": true, "memberVariableDeclaration": true, "parameter": true, "propertyDeclaration": true }],
     "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
 
     "sonarjs/no-duplicate-string": "off"
