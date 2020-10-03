@@ -35,7 +35,7 @@ module.exports = {
     "spaced-comment": ["error", "always", { line: { markers: ["/", "#region", "#endregion"] } }],
 
     // Change eslint rule to @typescript-eslint rule
-    "lines-between-class-members": "off",
+    "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
     "no-loop-func": "off",
     "no-return-await": "off",
     "no-unused-expressions": "off",
