@@ -36,16 +36,22 @@ module.exports = {
 
     // Change eslint rule to @typescript-eslint rule
     "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
+    "no-dupe-class-members": "off",
+    "no-duplicate-imports": "off",
     "no-loop-func": "off",
     "no-return-await": "off",
     "no-unused-expressions": "off",
 
+    // https://github.com/benmosher/eslint-plugin-import/issues/1753
+    "import/named": "off",
     // https://github.com/benmosher/eslint-plugin-import/issues/1453
     "import/no-cycle": "off",
     "import/no-default-export": "error",
     "import/prefer-default-export": "off",
 
+    "@typescript-eslint/consistent-indexed-object-style": "error",
     "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: "angle-bracket" }],
+    "@typescript-eslint/consistent-type-imports": ["error", { prefer: "type-imports" }],
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/explicit-member-accessibility": ["error", { overrides: { constructors: "no-public" } }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/977
@@ -57,6 +63,9 @@ module.exports = {
       { selector: "property", format: null, leadingUnderscore: "allow" },
       { selector: "typeLike", format: ["StrictPascalCase"] },
       { selector: "enumMember", format: ["UPPER_CASE"] }],
+
+    "@typescript-eslint/no-dupe-class-members": "error",
+    "@typescript-eslint/no-duplicate-imports": "error",
     "@typescript-eslint/no-floating-promises": ["error", { ignoreIIFE: true, ignoreVoid: true }],
     "@typescript-eslint/no-inferrable-types": ["error", { ignoreParameters: true, ignoreProperties: true }],
     "@typescript-eslint/no-loop-func": "error",
