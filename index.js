@@ -47,6 +47,7 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/issues/1453
     "import/no-cycle": "off",
     "import/no-default-export": "error",
+    "import/order": ["error", { groups: [["builtin", "external", "internal"]], "newlines-between": "always", alphabetize: { order: "asc", caseInsensitive: true } }],
     "import/prefer-default-export": "off",
 
     "@typescript-eslint/consistent-indexed-object-style": "error",
