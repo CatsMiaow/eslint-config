@@ -7,11 +7,12 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "sonarjs", "jest"],
+  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "jest"],
   extends: [
     "eslint:recommended",
     "airbnb-typescript/base",
     "plugin:jest/recommended",
+    "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -82,6 +83,12 @@ module.exports = {
     "@typescript-eslint/typedef": ["error", { arrowParameter: true, memberVariableDeclaration: true, parameter: true, propertyDeclaration: true }],
     "@typescript-eslint/unbound-method": ["error", { ignoreStatic: true }],
 
-    "sonarjs/no-duplicate-string": "off"
+    "sonarjs/no-duplicate-string": "off",
+
+    "unicorn/import-style": "off",
+    "unicorn/no-fn-reference-in-iterator": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-unreadable-array-destructuring": "off",
+    "unicorn/prevent-abbreviations": "off",
   },
 };
