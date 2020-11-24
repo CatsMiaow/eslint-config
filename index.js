@@ -62,6 +62,9 @@ module.exports = {
     "@typescript-eslint/naming-convention": ["error",
       { selector: "default", format: ["strictCamelCase"] },
       { selector: "variable", format: ["camelCase", "UPPER_CASE"] },
+      // https://github.com/microsoft/TypeScript/issues/9458
+      // https://github.com/typescript-eslint/typescript-eslint/issues/1510
+      { selector: "parameter", format: ["strictCamelCase"], leadingUnderscore: "allow" },
       { selector: "property", format: null, leadingUnderscore: "allow" },
       { selector: "typeLike", format: ["StrictPascalCase"] },
       { selector: "enumMember", format: ["UPPER_CASE"] }],
@@ -73,6 +76,10 @@ module.exports = {
     "@typescript-eslint/no-loop-func": "error",
     "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+    "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-type-constraint": "error",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unused-expressions": "error",
