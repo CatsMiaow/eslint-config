@@ -60,7 +60,7 @@ module.exports = {
     "@typescript-eslint/lines-between-class-members": "off",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/naming-convention": ["error",
-      { selector: "default", format: ["strictCamelCase"] },
+      { selector: "default", format: ["camelCase"] },
       { selector: "variable", format: ["camelCase", "UPPER_CASE"] },
       // https://github.com/microsoft/TypeScript/issues/9458
       // https://github.com/typescript-eslint/typescript-eslint/issues/1510
