@@ -60,12 +60,12 @@ module.exports = {
     "@typescript-eslint/lines-between-class-members": "off",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/naming-convention": ["error",
-      { selector: "default", format: ["camelCase"] },
+      { selector: "default", format: ["strictCamelCase"] },
       { selector: "variable", format: ["camelCase", "UPPER_CASE"] },
       // https://github.com/microsoft/TypeScript/issues/9458
-      // https://github.com/typescript-eslint/typescript-eslint/issues/1510
-      { selector: "parameter", format: ["strictCamelCase"], leadingUnderscore: "allow" },
-      { selector: "property", format: null, leadingUnderscore: "allow" },
+      { selector: "parameter", modifiers: ["unused"], format: ["strictCamelCase"], leadingUnderscore: "allow" },
+      { selector: "property", format: null },
+      { selector: "typeProperty", format: null },
       { selector: "typeLike", format: ["StrictPascalCase"] },
       { selector: "enumMember", format: ["UPPER_CASE"] }],
 
