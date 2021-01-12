@@ -94,7 +94,7 @@ module.exports = {
     "sonarjs/no-duplicate-string": "off",
 
     "unicorn/import-style": "off",
-    "unicorn/no-fn-reference-in-iterator": "off",
+    "unicorn/no-array-callback-reference": "off",
     "unicorn/no-null": "off",
     "unicorn/no-unreadable-array-destructuring": "off",
     "unicorn/prevent-abbreviations": "off",
