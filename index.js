@@ -42,6 +42,7 @@ module.exports = {
     "no-loop-func": "off",
     "no-return-await": "off",
     "no-unused-expressions": "off",
+    "object-curly-spacing": "off",
 
     // https://github.com/benmosher/eslint-plugin-import/issues/1753
     "import/named": "off",
@@ -68,7 +69,6 @@ module.exports = {
       { selector: "typeProperty", format: null },
       { selector: "typeLike", format: ["StrictPascalCase"] },
       { selector: "enumMember", format: ["UPPER_CASE"] }],
-
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-duplicate-imports": "error",
     "@typescript-eslint/no-floating-promises": ["error", { ignoreIIFE: true, ignoreVoid: true }],
@@ -83,6 +83,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unused-expressions": "error",
+    "@typescript-eslint/object-curly-spacing": ["error", "always"],
     "@typescript-eslint/prefer-includes": "off",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/promise-function-async": "error",
