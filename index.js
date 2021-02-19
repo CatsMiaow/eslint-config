@@ -62,7 +62,7 @@ module.exports = {
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/naming-convention": ["error",
       { selector: "default", format: ["strictCamelCase"] },
-      { selector: "variable", format: ["camelCase", "UPPER_CASE"] },
+      { selector: "variable", format: ["strictCamelCase", "UPPER_CASE", "StrictPascalCase"] },
       // https://github.com/microsoft/TypeScript/issues/9458
       { selector: "parameter", modifiers: ["unused"], format: ["strictCamelCase"], leadingUnderscore: "allow" },
       { selector: "property", format: null },
