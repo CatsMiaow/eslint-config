@@ -24,6 +24,7 @@ module.exports = {
     "func-names": "off",
     "max-len": ["error", { code: 140, ignoreTemplateLiterals: true }],
     "newline-per-chained-call": "off",
+    "no-await-in-loop": "off",
     "no-continue": "off",
     // https://github.com/airbnb/javascript/issues/1342
     "no-param-reassign": ["error", { props: false }],
@@ -59,6 +60,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": ["error", { overrides: { constructors: "no-public" } }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/977
     "@typescript-eslint/lines-between-class-members": "off",
+    "@typescript-eslint/member-delimiter-style": "error",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/naming-convention": ["error",
       { selector: "default", format: ["strictCamelCase"] },
@@ -80,7 +82,6 @@ module.exports = {
     "@typescript-eslint/no-unnecessary-type-arguments": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
-    "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unused-expressions": "error",
     "@typescript-eslint/object-curly-spacing": ["error", "always"],
