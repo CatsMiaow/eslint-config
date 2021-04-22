@@ -60,6 +60,8 @@ module.exports = {
       { selector: "typeProperty", format: null },
       { selector: "typeLike", format: ["StrictPascalCase"] },
       { selector: "enumMember", format: ["UPPER_CASE"] }],
+    "@typescript-eslint/no-confusing-void-expression": ["error", { ignoreArrowShorthand: true }],
+    "@typescript-eslint/no-extra-parens": ["error", "functions"],
     "@typescript-eslint/no-floating-promises": ["error", { ignoreIIFE: true, ignoreVoid: true }],
     "@typescript-eslint/no-inferrable-types": ["error", { ignoreParameters: true, ignoreProperties: true }],
     "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
@@ -67,11 +69,24 @@ module.exports = {
     "@typescript-eslint/typedef": ["error", { arrowParameter: true, memberVariableDeclaration: true, parameter: true, propertyDeclaration: true }],
     "@typescript-eslint/unbound-method": ["error", { ignoreStatic: true }],
 
+    "@typescript-eslint/init-declarations": "off",
     // https://github.com/typescript-eslint/typescript-eslint/issues/977
     "@typescript-eslint/lines-between-class-members": "off",
+    "@typescript-eslint/no-extraneous-class": "off",
+    "@typescript-eslint/no-implicit-any-catch": "off",
+    "@typescript-eslint/no-magic-numbers": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/no-type-alias": "off",
+    "@typescript-eslint/no-unnecessary-condition": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/non-nullable-type-assertion-style": "off",
     "@typescript-eslint/prefer-includes": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/prefer-readonly": "off",
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/sort-type-union-intersection-members": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
     //#endregion
 
     "sonarjs/no-duplicate-string": "off",
