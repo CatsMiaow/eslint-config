@@ -51,6 +51,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: "angle-bracket" }],
     "@typescript-eslint/consistent-type-imports": ["error", { prefer: "type-imports" }],
     "@typescript-eslint/explicit-member-accessibility": ["error", { overrides: { constructors: "no-public" } }],
+    "@typescript-eslint/method-signature-style": ["error", "method"],
     "@typescript-eslint/naming-convention": ["error",
       { selector: "default", format: ["strictCamelCase"] },
       { selector: "variable", format: ["strictCamelCase", "UPPER_CASE", "StrictPascalCase"] },
