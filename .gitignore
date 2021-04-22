@@ -2,6 +2,7 @@
 .vscode
 .history
 .DS_Store
+.nvmrc
 dist
 
 # Logs
