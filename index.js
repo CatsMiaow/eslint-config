@@ -7,13 +7,14 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "jest"],
+  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "promise", "jest"],
   extends: [
     "eslint:recommended",
     "airbnb-typescript/base",
     "plugin:jest/recommended",
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
+    "plugin:promise/recommended",
     "plugin:@typescript-eslint/all",
   ],
   rules: {
@@ -90,12 +91,20 @@ module.exports = {
     "@typescript-eslint/strict-boolean-expressions": "off",
     //#endregion
 
+    //#region sonarjs
     "sonarjs/no-duplicate-string": "off",
+    //#endregion
 
+    //#region unicorn
     "unicorn/import-style": "off",
     "unicorn/no-array-callback-reference": "off",
     "unicorn/no-null": "off",
     "unicorn/no-unreadable-array-destructuring": "off",
     "unicorn/prevent-abbreviations": "off",
+    //#endregion
+
+    //#region promise
+    "promise/prefer-await-to-then": "error",
+    //#endregion
   },
 };
