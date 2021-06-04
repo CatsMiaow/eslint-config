@@ -100,6 +100,8 @@ module.exports = {
     "unicorn/no-array-callback-reference": "off",
     "unicorn/no-null": "off",
     "unicorn/no-unreadable-array-destructuring": "off",
+    "unicorn/prefer-module": "off",
+    "unicorn/prefer-node-protocol": "off",
     "unicorn/prevent-abbreviations": "off",
     //#endregion
 
