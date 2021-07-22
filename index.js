@@ -103,6 +103,7 @@ module.exports = {
     "unicorn/numeric-separators-style": ["error", { onlyIfContainsSeparator: true }],
     "unicorn/prefer-module": "off",
     "unicorn/prefer-node-protocol": "off",
+    "unicorn/prefer-prototype-methods": "off",
     "unicorn/prevent-abbreviations": "off",
     //#endregion
 
