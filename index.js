@@ -7,14 +7,13 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "promise", "jest"],
+  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "jest"],
   extends: [
     "eslint:recommended",
     "airbnb-typescript/base",
     "plugin:jest/recommended",
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
-    "plugin:promise/recommended",
     "plugin:@typescript-eslint/all",
   ],
   rules: {
@@ -105,10 +104,6 @@ module.exports = {
     "unicorn/prefer-node-protocol": "off",
     "unicorn/prefer-prototype-methods": "off",
     "unicorn/prevent-abbreviations": "off",
-    //#endregion
-
-    //#region promise
-    "promise/prefer-await-to-then": "error",
     //#endregion
   },
 };
