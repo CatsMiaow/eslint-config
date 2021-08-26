@@ -10,8 +10,8 @@ module.exports = {
   plugins: ["@typescript-eslint", "sonarjs", "unicorn", "jest"],
   extends: [
     "eslint:recommended",
-    'airbnb-base',
-    'airbnb-typescript/base',
+    "airbnb-base",
+    "airbnb-typescript/base",
     "plugin:jest/recommended",
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
