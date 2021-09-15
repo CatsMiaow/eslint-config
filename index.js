@@ -44,14 +44,12 @@ module.exports = {
     "import/order": ["error", { groups: [["builtin", "external", "internal"]], "newlines-between": "always", alphabetize: { order: "asc", caseInsensitive: true } }],
     "import/prefer-default-export": "off",
 
-    // Change eslint rule to @typescript-eslint rule
-    "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
-
     //#region typescript-eslint
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/all.ts
     "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: "angle-bracket" }],
     "@typescript-eslint/consistent-type-imports": ["error", { prefer: "type-imports" }],
     "@typescript-eslint/explicit-member-accessibility": ["error", { overrides: { constructors: "no-public" } }],
+    "@typescript-eslint/lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
     "@typescript-eslint/method-signature-style": ["error", "method"],
     "@typescript-eslint/naming-convention": ["error",
       { selector: "default", format: ["strictCamelCase"] },
@@ -72,8 +70,6 @@ module.exports = {
     "@typescript-eslint/unbound-method": ["error", { ignoreStatic: true }],
 
     "@typescript-eslint/init-declarations": "off",
-    // https://github.com/typescript-eslint/typescript-eslint/issues/977
-    "@typescript-eslint/lines-between-class-members": "off",
     "@typescript-eslint/no-extraneous-class": "off",
     "@typescript-eslint/no-implicit-any-catch": "off",
     "@typescript-eslint/no-magic-numbers": "off",
