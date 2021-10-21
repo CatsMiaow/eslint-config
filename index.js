@@ -92,6 +92,7 @@ module.exports = {
     //#endregion
 
     //#region unicorn
+    "unicorn/consistent-function-scoping": ["error", { "checkArrowFunctions": false }],
     "unicorn/import-style": "off",
     "unicorn/no-array-callback-reference": "off",
     "unicorn/no-null": "off",
