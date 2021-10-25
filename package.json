@@ -21,8 +21,8 @@
   "homepage": "https://github.com/CatsMiaow/eslint-config#readme",
   "license": "UNLICENSED",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.1.0",
-    "@typescript-eslint/parser": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.1-alpha.9",
+    "@typescript-eslint/parser": "^5.1.1-alpha.9",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.1",
     "eslint-plugin-import": "^2.25.2",
@@ -31,6 +31,6 @@
     "eslint-plugin-unicorn": "^37.0.1"
   },
   "peerDependencies": {
-    "eslint": "^8.0.1"
+    "eslint": "^8.1.0"
   }
 }
