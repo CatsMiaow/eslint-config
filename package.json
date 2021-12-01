@@ -7,7 +7,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {},
   "publishConfig": {
@@ -21,10 +21,10 @@
   "homepage": "https://github.com/CatsMiaow/eslint-config#readme",
   "license": "UNLICENSED",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^16.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-sonarjs": "^0.10.0",
