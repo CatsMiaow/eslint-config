@@ -48,7 +48,7 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/all.ts
     "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: "angle-bracket" }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/4268
-    // "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/consistent-type-imports": "off",
     "@typescript-eslint/explicit-member-accessibility": ["error", { overrides: { constructors: "no-public" } }],
     "@typescript-eslint/lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
     "@typescript-eslint/method-signature-style": ["error", "method"],
