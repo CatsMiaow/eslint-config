@@ -67,6 +67,7 @@ module.exports = {
     "@typescript-eslint/no-inferrable-types": ["error", { ignoreParameters: true, ignoreProperties: true }],
     "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
     "@typescript-eslint/object-curly-spacing": ["error", "always"],
+    "@typescript-eslint/parameter-properties": "off",
     "@typescript-eslint/typedef": ["error", { arrowParameter: true, memberVariableDeclaration: true, parameter: true, propertyDeclaration: true }],
     "@typescript-eslint/unbound-method": ["error", { ignoreStatic: true }],
 
