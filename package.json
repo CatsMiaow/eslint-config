@@ -1,6 +1,6 @@
 {
   "name": "@catsmiaow/eslint-config",
-  "version": "0.20.2",
+  "version": "0.20.3",
   "description": "Shared ESLint config",
   "main": "index.js",
   "files": [
