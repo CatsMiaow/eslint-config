@@ -38,8 +38,6 @@ module.exports = {
 
     // https://github.com/benmosher/eslint-plugin-import/issues/1753
     "import/named": "off",
-    // https://github.com/benmosher/eslint-plugin-import/issues/1453
-    "import/no-cycle": "off",
     "import/no-default-export": "error",
     "import/order": ["error", { groups: [["builtin", "external", "internal"]], "newlines-between": "always", alphabetize: { order: "asc", caseInsensitive: true } }],
     "import/prefer-default-export": "off",
@@ -103,6 +101,7 @@ module.exports = {
     "unicorn/prefer-module": "off",
     "unicorn/prefer-node-protocol": "off",
     "unicorn/prefer-prototype-methods": "off",
+    "unicorn/prefer-top-level-await": "off", // only ESM
     "unicorn/prevent-abbreviations": "off",
     //#endregion
   },
