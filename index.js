@@ -95,6 +95,7 @@ module.exports = {
     "unicorn/consistent-function-scoping": ["error", { "checkArrowFunctions": false }],
     "unicorn/import-style": "off",
     "unicorn/no-array-callback-reference": "off",
+    "unicorn/no-array-reduce": ["error", { "allowSimpleOperations": true }],
     "unicorn/no-null": "off",
     "unicorn/no-unreadable-array-destructuring": "off",
     "unicorn/numeric-separators-style": ["error", { onlyIfContainsSeparator: true }],
