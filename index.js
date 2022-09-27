@@ -93,14 +93,12 @@ module.exports = {
 
     //#region unicorn
     "unicorn/consistent-function-scoping": ["error", { "checkArrowFunctions": false }],
-    "unicorn/import-style": "off",
     "unicorn/no-array-callback-reference": "off",
     "unicorn/no-array-reduce": ["error", { "allowSimpleOperations": true }],
     "unicorn/no-null": "off",
     "unicorn/no-unreadable-array-destructuring": "off",
     "unicorn/numeric-separators-style": ["error", { onlyIfContainsSeparator: true }],
     "unicorn/prefer-module": "off",
-    "unicorn/prefer-node-protocol": "off",
     "unicorn/prefer-prototype-methods": "off",
     "unicorn/prefer-top-level-await": "off", // only ESM
     "unicorn/prevent-abbreviations": "off",
