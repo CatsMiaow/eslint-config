@@ -103,6 +103,7 @@ module.exports = {
     "unicorn/prefer-prototype-methods": "off",
     "unicorn/prefer-top-level-await": "off", // only ESM
     "unicorn/prevent-abbreviations": "off",
+    "unicorn/switch-case-braces": ["error", "avoid"],
     //#endregion
   },
 };
