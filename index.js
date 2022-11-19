@@ -84,7 +84,7 @@ module.exports = {
     "@typescript-eslint/prefer-readonly": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
-    "@typescript-eslint/sort-type-union-intersection-members": "off",
+    "@typescript-eslint/sort-type-constituents": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     //#endregion
 
