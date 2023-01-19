@@ -7,11 +7,12 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "sonarjs", "unicorn"],
+  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "jest"],
   extends: [
     "eslint:recommended",
     "airbnb-base",
     "airbnb-typescript/base",
+    "plugin:jest/recommended",
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
     "plugin:@typescript-eslint/all",
