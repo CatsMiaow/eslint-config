@@ -1,10 +1,10 @@
-// https://eslint.org/docs/developer-guide/shareable-configs
+// https://eslint.org/docs/latest/extend/shareable-configs
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    tsconfigRootDir: ".",
-    project: "tsconfig.json",
+    project: true,
+    tsconfigRootDir: __dirname,
     sourceType: "module",
   },
   plugins: ["@typescript-eslint", "sonarjs", "unicorn", "vitest", "prettier"],
