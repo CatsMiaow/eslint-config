@@ -33,7 +33,7 @@
     "eslint-plugin-vitest": "^0.2.6"
   },
   "peerDependencies": {
-    "eslint": "^8.38.0",
-    "vitest": "^0.32.0"
+    "eslint": "^8.45.0",
+    "vitest": "^0.33.0"
   }
 }
