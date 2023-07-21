@@ -7,7 +7,7 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "vitest"],
+  plugins: ["@typescript-eslint", "sonarjs", "unicorn", "vitest", "prettier"],
   extends: [
     "eslint:recommended",
     "airbnb-base",
@@ -16,6 +16,7 @@ module.exports = {
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
     "plugin:@typescript-eslint/all",
+    "plugin:prettier/recommended",
   ],
   rules: {
     "class-methods-use-this": "off",
