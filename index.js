@@ -47,6 +47,7 @@ module.exports = {
 
     //#region typescript-eslint
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/all.ts
+    '@typescript-eslint/class-methods-use-this': 'off',
     '@typescript-eslint/consistent-generic-constructors': ['error', 'type-annotation'],
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/4268
