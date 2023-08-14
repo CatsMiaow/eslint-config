@@ -22,7 +22,7 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/1277
     'consistent-return': 'off',
     'func-names': 'off',
-    'max-len': ['error', { code: 140, ignoreTemplateLiterals: true }],
+    'max-len': ['error', { code: 140, ignoreTemplateLiterals: true, ignoreUrls: true }],
     'newline-per-chained-call': 'off',
     'no-await-in-loop': 'off',
     'no-continue': 'off',
