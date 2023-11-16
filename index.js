@@ -66,6 +66,7 @@ module.exports = {
       { selector: 'typeProperty', format: null },
       { selector: 'typeLike', format: ['StrictPascalCase'] },
       { selector: 'enumMember', format: ['UPPER_CASE'] },
+      { selector: 'import', modifiers: ['default'], format: ['strictCamelCase', 'StrictPascalCase'] },
     ],
     '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
     '@typescript-eslint/no-extra-parens': ['error', 'functions'],
@@ -79,6 +80,8 @@ module.exports = {
     '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
 
     '@typescript-eslint/init-declarations': 'off',
+    // https://github.com/typescript-eslint/typescript-eslint/issues/7934
+    '@typescript-eslint/max-params': 'off',
     '@typescript-eslint/no-extraneous-class': 'off',
     '@typescript-eslint/no-implicit-any-catch': 'off',
     '@typescript-eslint/no-magic-numbers': 'off',
