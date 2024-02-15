@@ -37,6 +37,7 @@ module.exports = {
     'object-curly-newline': 'off',
     'spaced-comment': ['error', 'always', { line: { markers: ['/', '#region', '#endregion'] } }],
 
+    'import/extensions': ['error', 'ignorePackages'],
     // https://github.com/benmosher/eslint-plugin-import/issues/1753
     'import/named': 'off',
     'import/no-default-export': 'error',
