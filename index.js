@@ -20,8 +20,6 @@ module.exports = {
   ],
   rules: {
     'class-methods-use-this': 'off',
-    // https://github.com/typescript-eslint/typescript-eslint/issues/1277
-    'consistent-return': 'off',
     'func-names': 'off',
     'max-len': ['error', { code: 140, ignoreTemplateLiterals: true, ignoreUrls: true }],
     'newline-per-chained-call': 'off',
@@ -51,6 +49,7 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/all.ts
     '@typescript-eslint/class-methods-use-this': 'off',
     '@typescript-eslint/consistent-generic-constructors': ['error', 'type-annotation'],
+    '@typescript-eslint/consistent-return': 'off',
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
     // https://github.com/typescript-eslint/typescript-eslint/issues/4268
     '@typescript-eslint/consistent-type-imports': 'off',
@@ -97,6 +96,7 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/sort-type-constituents': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
     //#endregion
 
     //#region sonarjs
@@ -110,9 +110,7 @@ module.exports = {
     'unicorn/no-null': 'off',
     'unicorn/no-unreadable-array-destructuring': 'off',
     'unicorn/numeric-separators-style': ['error', { onlyIfContainsSeparator: true }],
-    'unicorn/prefer-module': 'off',
     'unicorn/prefer-prototype-methods': 'off',
-    'unicorn/prefer-top-level-await': 'off', // only ESM
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/switch-case-braces': ['error', 'avoid'],
     //#endregion
