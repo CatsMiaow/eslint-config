@@ -106,6 +106,8 @@ module.exports = {
     //#region unicorn
     'unicorn/consistent-function-scoping': ['error', { checkArrowFunctions: false }],
     'unicorn/no-array-callback-reference': 'off',
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/1947
+    'unicorn/no-array-method-this-argument': 'off',
     'unicorn/no-array-reduce': ['error', { allowSimpleOperations: true }],
     'unicorn/no-null': 'off',
     'unicorn/no-unreadable-array-destructuring': 'off',
