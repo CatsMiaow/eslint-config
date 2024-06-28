@@ -76,6 +76,11 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/object-curly-spacing': ['error', 'always'],
     '@typescript-eslint/parameter-properties': 'off',
+    // defaultOptionsRecommended https://typescript-eslint.io/rules/restrict-template-expressions/#options
+    '@typescript-eslint/restrict-template-expressions': [
+      'error',
+      { allowAny: true, allowBoolean: true, allowNullish: true, allowNumber: true, allowRegExp: true },
+    ],
     '@typescript-eslint/typedef': ['error', { memberVariableDeclaration: true, parameter: true, propertyDeclaration: true }],
     '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
 
@@ -93,7 +98,6 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/prefer-readonly': 'off',
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
-    '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/sort-type-constituents': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
