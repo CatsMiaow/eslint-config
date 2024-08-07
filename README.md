@@ -16,13 +16,27 @@ npm i -D @catsmiaow/eslint-config eslint vitest prettier
 
 ## Usage
 
-`.eslintrc`
+`eslint.config.mjs`
 
-```json
-{
-  "extends": "@catsmiaow/eslint-config",
-  "rules": {}
-}
+```ts
+import { defineConfig } from 'eslint/config';
+import sharedConfig from '@catsmiaow/eslint-config';
+
+export default defineConfig([
+  {
+    ignores: ['**/node_modules/**', '**/dist/**', '**/vitest.config.ts'],
+  },
+  {
+    extends: [sharedConfig],
+    rules: {},
+  },
+  {
+    files: ['**/test/**/*'],
+    rules: {
+      'no-console': 'off',
+    },
+  },
+]);
 ```
 
 `.prettierrc`
@@ -35,7 +49,7 @@ npm i -D @catsmiaow/eslint-config eslint vitest prettier
   "semi": true,
   "singleQuote": true,
   "quoteProps": "as-needed",
-  "trailingComma": "es5",
+  "trailingComma": "all",
   "bracketSpacing": true,
   "arrowParens": "always"
 }
