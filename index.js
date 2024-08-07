@@ -1,9 +1,11 @@
 import { FlatCompat } from '@eslint/eslintrc';
 import eslint from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
 import vitest from 'eslint-plugin-vitest';
+import eslintPluginImport from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
 
 const compat = new FlatCompat({
@@ -12,16 +14,21 @@ const compat = new FlatCompat({
   allConfig: eslint.configs.all,
 });
 
+const airbnbTypescript = compat.extends('airbnb-typescript/base');
+// ConfigError: Config "typescript-eslint/base": Key "plugins": Cannot redefine plugin "@typescript-eslint".
+airbnbTypescript[0].plugins = {};
+
+// https://github.com/import-js/eslint-plugin-import/issues/2556#issuecomment-2267581659
+
 export default tseslint.config(
   eslint.configs.recommended,
-  ...compat.extends(
-    'airbnb-base',
-    'airbnb-typescript/base',
-  ),
+  ...compat.extends('airbnb-base'),
+  ...airbnbTypescript,
   vitest.configs.recommended,
   unicorn.configs['flat/recommended'],
   sonarjs.configs.recommended,
   ...tseslint.configs.all,
+  stylistic.configs['recommended-flat'],
   eslintPluginPrettierRecommended,
   {
     languageOptions: {
@@ -32,9 +39,11 @@ export default tseslint.config(
     },
     plugins: {
       '@typescript-eslint': tseslint.plugin,
-      sonarjs,
-      unicorn,
+      import: fixupPluginRules(eslintPluginImport),
+      // sonarjs,
+      // unicorn,
       vitest,
+      '@stylistic': stylistic,
     },
     rules: {
       'class-methods-use-this': 'off',
@@ -72,7 +81,6 @@ export default tseslint.config(
       // https://github.com/typescript-eslint/typescript-eslint/issues/4268
       '@typescript-eslint/consistent-type-imports': 'off',
       '@typescript-eslint/explicit-member-accessibility': ['error', { overrides: { constructors: 'no-public' } }],
-      '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
       '@typescript-eslint/method-signature-style': ['error', 'method'],
       '@typescript-eslint/naming-convention': [
         'error',
@@ -87,12 +95,10 @@ export default tseslint.config(
         { selector: 'import', modifiers: ['default'], format: ['strictCamelCase', 'StrictPascalCase'] },
       ],
       '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
-      '@typescript-eslint/no-extra-parens': ['error', 'functions'],
       '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true, ignoreVoid: true }],
       '@typescript-eslint/no-inferrable-types': ['error', { ignoreParameters: true, ignoreProperties: true }],
       '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
       '@typescript-eslint/no-unnecessary-condition': 'error',
-      '@typescript-eslint/object-curly-spacing': ['error', 'always'],
       '@typescript-eslint/parameter-properties': 'off',
       // defaultOptionsRecommended https://typescript-eslint.io/rules/restrict-template-expressions/#options
       '@typescript-eslint/restrict-template-expressions': [
@@ -119,6 +125,12 @@ export default tseslint.config(
       '@typescript-eslint/sort-type-constituents': 'off',
       '@typescript-eslint/strict-boolean-expressions': 'off',
       '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
+      //#endregion
+
+      //#region stylistic
+      '@stylistic/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+      '@stylistic/no-extra-parens': ['error', 'functions'],
+      '@stylistic/object-curly-spacing': ['error', 'always'],
       //#endregion
 
       //#region sonarjs

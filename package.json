@@ -2,6 +2,7 @@
   "name": "@catsmiaow/eslint-config",
   "version": "0.32.0",
   "description": "Shared ESLint config",
+  "type": "module",
   "main": "index.js",
   "files": [
     "index.js"
@@ -21,7 +22,9 @@
   "homepage": "https://github.com/CatsMiaow/eslint-config#readme",
   "license": "UNLICENSED",
   "dependencies": {
+    "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.8.0",
+    "@stylistic/eslint-plugin": "^2.6.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
